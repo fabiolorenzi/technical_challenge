@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e9b5371377.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="images/test_icon.png">
+    <title>Navigation</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="main_nav">
+                <li id="comp0"><a href="#">Visual Languange</a></li>
+                <li class="dropdown" id="dd1" onclick="opener3();falseIt()">
+                    <p>
+                        Components
+                        <i class="fas fa-angle-down" id="down1"></i>
+                        <i class="fas fa-angle-up" id="up1"></i>
+                    </p>
+                </li>
+                <!--CHILDREN_COMPONENTS-->
+                <ul class="sec_nav del" id="sec1">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another Action</a></li>
+                    <li><a href="#">Something Else Here</a></li>
+                </ul>
+                <!--END_CHILDREN_COMPONENTS-->
+                <li id="comp1"><a href="#">Component 1</a></li>
+                <li id="comp2"><a href="#">Component 2</a></li>
+                <li id="comp3"><a href="#">Component 3</a></li>
+                <li class="dropdown" id="dd2" onclick="opener4();falseIt()">
+                    <p>
+                        Component 4
+                        <i class="fas fa-angle-down" id="down2"></i>
+                        <i class="fas fa-angle-up" id="up2"></i>
+                    </p>
+                </li>
+                <!--CHILDREN_COMPONENT_4-->
+                <ul class="sec_nav del" id="sec2">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another Action</a></li>
+                    <li><a href="#">Something Else Here</a></li>
+                </ul>
+                <!--END_CHILDREN_COMPONENT_4-->
+                <li id="comp5"><a href="#">Component 5</a></li>
+                <li id="comp6"><a href="#">Component 6</a></li>
+                <li id="show" onclick="showMore()">
+                    <i class="fas fa-sort-amount-up" id="iconShow"></i>
+                    <p>Show More</p>
+                </li>
+                <!--SHOW_MORE_MENU-->
+                <ul class="hid_nav del" id="sec3">
+                    <li id="comp01"><a href="#">Visual Languange</a></li>
+                    <li class="dropdown" id="dd11" onclick="opener1()">
+                        <p>
+                            Components
+                            <i class="fas fa-angle-down" id="down11"></i>
+                            <i class="fas fa-angle-up" id="up11"></i>
+                        </p>
+                    </li>
+                    <ul class="sec_nav" id="sec11">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something Else Here</a></li>
+                    </ul>
+                    <li id="comp11"><a href="#">Component 1</a></li>
+                    <li id="comp21"><a href="#">Component 2</a></li>
+                    <li id="comp31"><a href="#">Component 3</a></li>
+                    <li class="dropdown" id="dd21" onclick="opener2()">
+                        <p>
+                            Component 4
+                            <i class="fas fa-angle-down" id="down21"></i>
+                            <i class="fas fa-angle-up" id="up21"></i>
+                        </p>
+                    </li>
+                    <ul class="sec_nav" id="sec21">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another Action</a></li>
+                        <li><a href="#">Something Else Here</a></li>
+                    </ul>
+                    <li id="comp51"><a href="#">Component 5</a></li>
+                    <li id="comp61"><a href="#">Component 6</a></li>
+                </ul>
+                <i class="fas fa-angle-right" id="closingArrow" onclick="falseIt()"></i>
+                <!--END_SHOW_MORE_MENU-->
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div></div>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
